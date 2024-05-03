@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    
+}
+
+div.back{
+    width: 100%;
+    height: 600px;
+    /* background-image: url("https://images.unsplash.com/photo-1599423256402-939fc3e8112d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdhdGNoJTIwaGFuZHxlbnwwfHwwfHx8MA%3D%3D"); */
+
+    background-image: url("https://media.istockphoto.com/id/939197804/photo/woman-looking-her-watch-stand-up.webp?b=1&s=170667a&w=0&k=20&c=fdzT9EgmD_OouWwbcXIw_gp6jWYhNTkdWCgGZkRvjNI=");
+
+    /* background-image: url("https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2F0Y2h8ZW58MHx8MHx8fDA%3D"); */
+
+    /* background-image: url("https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHdhdGNofGVufDB8fDB8fHww"); */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.effect_black{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.login-box{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 40%;
+    font-family: sans-serif;
+}
+
+h4.login-head{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+input.email,input.password,input.submit{
+    width: 52%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+
+}
+
+input.password{
+    margin-top: 20px;
+}
+
+div.container{
+    display: flex;
+    justify-content: center;
+}
+
+input.submit{
+    margin-top: 20px;
+    background-color: #3BE8B0;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    
+}
+
+input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: -90px;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+input.checked{
+    margin: 10px 5px 0px 15px;
+    width: 20px;
+    height: 20px;
+   
+}
+span.checked{
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    margin-left: 2px;
+    position: relative;
+    top: 8px;
+ 
+}
+
+a.fpassword,a.sign{
+  text-decoration-line: none;
+}
+
+a.fpassword p{
+    color: red;
+    text-align: center;
+    
+}
+
+a.sign p{
+    color: white;
+    text-align: center;
+}
+
+
+/* Phones */
+
+@media only screen and (min-width:0px) and (max-width:500px){
+    div.back{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    div.login-box{
+        width: 70%;
+        height: 60%;
+    }
+
+    h4.login-head{
+        font-size: 35px;
+    }
+
+    input.email,input.password,input.submit{
+        width: 89%;
+        border-radius: 20px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+        font-size: 18px;
+    }
+
+     a.fpassword{
+        font-size: 20px;
+    }
+
+    a.sign p{
+        font-size: 17px;
+        margin-top: 7px;
+    }
+
+}
+
+/* Tablets */
+
+@media only screen and (min-width:501px) and (max-width:768px){
+    div.back{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    div.login-box{
+        width: 80%;
+        height: 60%;
+    }
+
+    h4.login-head{
+        font-size: 45px;
+    }
+
+    input.email,input.password,input.submit{
+        width: 68%;
+        border-radius: 40px;
+        font-size: 21px;
+        height: 49px;
+    }
+
+    input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+        font-size: 23px;
+    }
+
+    span.checked{
+        font-size: 21px;
+    }
+
+    a.fpassword{
+        font-size: 24px;
+    }
+
+    a.sign p{ 
+        font-size: 20px;
+        margin-top:  8px;
+
+    }
+
+}
+
+/* Laptop */
+
+@media only screen and (min-width:769px) and (max-width:992px){
+    div.back{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    div.login-box{
+        width: 70%;
+        height: 60%;
+    }
+
+    h4.login-head{
+        font-size: 50px;
+    }
+
+    input.email,input.password,input.submit{
+        width: 70%;
+        border-radius: 40px;
+        font-size: 23px;
+        height: 52px;
+    }
+
+    input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+        font-size: 24px;
+    }
+
+    span.checked{
+        font-size: 20px;
+    }
+
+    a.fpassword{
+        font-size: 27px;
+    }
+
+    a.sign p{ 
+        font-size: 23px;
+        margin-top:  8px;
+
+    }
+
+}
+
+/* Large */
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+    div.back{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    div.login-box{
+        width: 75%;
+        height: 65%;
+    }
+
+    h4.login-head{
+        font-size: 55px;
+    }
+
+    input.email,input.password,input.submit{
+        width: 60%;
+        border-radius: 40px;
+        font-size: 24px;
+        height: 60px;
+    }
+
+    input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+        font-size: 29px;
+    }
+
+    input.checked{
+        width: 32px;
+        height: 23px;
+    }
+
+    span.checked{
+        top: 6px;
+        font-size: 25px;
+    }
+
+    a.fpassword{
+        font-size: 28px;
+    }
+
+    a.sign p{ 
+        font-size: 23px;
+        margin-top:  8px;
+
+    }
+}
+
+
+@media only screen and (min-width:1201px) and (max-width: 1800px){
+
+    div.back{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    div.login-box{
+        width: 70%;
+        height: 60%;
+    }
+    
+    h4.login-head{
+        font-size: 35px;
+    }
+
+    input.email,input.password,input.submit{
+        width: 50%;
+        border-radius: 40px;
+        font-size: 22px;
+        height: 50px;
+    }
+
+    input.email::placeholder,input.password::placeholder,input.submit::placeholder{
+        font-size: 23px;
+    }
+
+
+    input.checked{
+        width: 32px;
+        height: 23px;
+    }
+
+    span.checked{
+        font-size: 27px;
+        top: 6px;
+
+    }
+
+    a.fpassword{
+        font-size: 25px;
+    }
+
+    a.sign p{ 
+        font-size: 23px;
+        margin-top:  8px;
+       
+    }
+}
